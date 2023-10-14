@@ -2,25 +2,32 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
   "height": 400,
-  "title": "Histogram of Average FIDE Ratings by Age Range",
+  "title": "Heatmap of Average FIDE Ratings by Age",
   "data": {
     "url": "https://raw.githubusercontent.com/rche0049/3179/main/Complete_Players_Database.csv",
     "format": {
       "type": "csv"
     }
   },
-  "mark": "bar",
+  "mark": {"type": "rect", "tooltip": true},
   "encoding": {
     "x": {
       "field": "Age",
-      "bin": {"maxbins": 20},
-      "title": "Age Range"
+      "bin": true,
+      "title": "Age"
     },
     "y": {
       "field": "FIDE",
-      "type": "quantitative",
-      "aggregate": "average", 
+      "bin": true,
       "title": "Average FIDE Rating"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count",
+      "scale": {
+        "scheme": "goldgreen" 
+      }
     }
   }
 }

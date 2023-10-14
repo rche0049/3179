@@ -8,18 +8,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Global Chess Insights</h1>
+  <header class="header-bar">
+    <!-- Header -->
+    <h1>The world of chess</h1>
+  </header>
+  <div id="container">
+  <!-- intro text -->
+  <div class = "intro">
+    <div class = "content">
+      <h3>The Chess Craze: From Novices to Grandmasters</h3>
+      <p>In recent years, chess has witnessed a significant surge in popularity, emerging as a strategic and intellectually engaging pastime for millions around the globe. </p>
+        <p>As a result of its soaring popularity, competitive chess has become an increasingly prominent pursuit. Governed by the Fédération Internationale des Échecs (FIDE), 
+          FIDE has become the norm, the legitimizing body, and the primary rating system. The FIDE rating system has played a pivotal role in evaluating players' skills and providing a 
+          standardized measure of their prowess, from aspiring novices to seasoned grandmasters.</p>
+          <p>What's fascinating is the diverse demographic landscape of chess enthusiasts, reflecting a blend of cultures, genders, and age brackets. This inclusivity is reshaping the chess community and making it more accessible than ever, 
+            ensuring that the ancient game continues to thrive as a competitive and intellectually stimulating pursuit.
+      </p>
+    </div>
+    <img src="chess_in_park.png" alt="people playing chess in park">
+  </div>
   <!-- map -->
+  <div class = "map">
+    <h3>Global Average FIDE Chess Rating by Country (2022)</h3>
   <div id="vis"></div>
-  <!-- total gm bar chart -->
+  <p class="figure"><strong>Figure 1</strong> World map of country FIDE ratings</p>
+</div>
+  <!-- total gm bar chart --> 
+  <div class = "item_container">
   <div id="bar_chart"></div>
-
+  </div>
+  <!-- total gm bar chart -->
+  <div id="heat_map"></div>
+</div>
+  <footer class="footer-bar">
+    <!-- Footer content goes here -->
+    <p>&copy; 2023 Your Website</p>
+  </footer>
+</div>
   <script>
     const spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Average FIDE Chess Rating by Country (2022)",
-  "width": 800,
-  "height": 500,
+  "width": 900,
+  "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
@@ -73,7 +103,7 @@
   ],
   "config": {}
 };
-    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis", spec, {"actions":false},{mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 
 </body>

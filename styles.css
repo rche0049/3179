@@ -1,20 +1,73 @@
-h1 {
-	font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-}
 body {
-	background-color:#312e2b;
-	color:white;
+	background-color:#ffffff;
+	color:rgb(0, 0, 0);
+	margin:0;
+	padding:0;
 }
 
-#vis {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.header-bar {
+	background-color: #5a2804; /* Brown background color */
+	color: #fff; /* Text color for the header */
+	padding: 10px;
   }
 
-#bar_chart {
-	position:absolute;
-	right:0;
+  .header-bar h1 {
+	text-align: left;
+	margin-left: 100px;
+	font-family: 'DM Sans',sans-serif;
+
   }
+
+
+#container {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+  }
+
+  .intro {
+	width: 65%;
+	margin: 10px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Inter';
+  }
+  
+  .content {
+	flex: 1;
+	margin-right: 20px;
+  }
+  
+  .intro img {
+	max-width: 50%; /* Adjust the width as needed */
+  }  
+
+  .map {
+	width: 65%;
+	font-family: 'Inter';
+	background-color: rgba(255, 165, 0, 0.5); 
+	padding-bottom: 20px;
+	border-radius: 10px;
+	text-align: center; 
+  }
+
+  .figure {
+	font-style: italic; /* Make the paragraph italic */
+	padding-left:50px;
+	text-align: left; /* Align the paragraph to the left */
+  }
+  
+.footer-bar {
+	background-color: #8B4513; /* Brown background color */
+	color: #fff; /* Text color for the footer */
+	text-align: center;
+	padding: 10px;
+  }
+  
