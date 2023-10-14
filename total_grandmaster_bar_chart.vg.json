@@ -1,0 +1,73 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 300,
+    "title": {
+      "text": "Top 10 Countries by Total GMs",
+      "color":"white",
+      "fontSize":20
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/rche0049/3179/main/International_Chess_Stats_Complete.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "background": "#312e2b", 
+    "transform": [
+      {
+        "window": [{"op": "rank", "as": "rank"}],
+        "sort": [{"field": "GMs", "order": "descending"}]
+      },
+      {
+        "filter": {"field": "rank", "lte": 10}
+      }
+    ],
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "GMs",
+            "type": "quantitative",
+            "axis": {"grid": false, "domain":false, "ticks":false, "labels":false, "title":null}
+          },
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {"field": "GMs", "op": "sum", "order": "descending"},
+            "axis": {"domain":false,"ticks":false, "title":null,"labelColor": "white","labelFontSize": 14}
+          },
+          "color": {
+            "value": "green"
+          }
+        }
+      },
+      {  
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 3,
+          "fontSize":14
+        },
+        "encoding": {
+          "x": {
+            "field": "GMs",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {"op": "sum", "field": "GMs", "order": "descending"}
+          },
+          "text": {"field": "GMs", "type": "quantitative"},
+          "color": {"value": "white"}
+        
+         
+        }
+      }
+    ],
+    "view": {"stroke": null}
+  }
+  

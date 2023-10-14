@@ -1,6 +1,20 @@
+h1 {
+	font-family: sans-serif;
+
+}
+body {
+	background-color:#312e2b;
+	color:white;
+}
+
 #vis {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+  }
+
+#bar_chart {
+	position:absolute;
+	right:0;
   }

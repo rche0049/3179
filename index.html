@@ -4,10 +4,16 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <script src="vega_lite_vis.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="vis"/>
+  <h1>Global Chess Insights</h1>
+  <!-- map -->
+  <div id="vis"></div>
+  <!-- total gm bar chart -->
+  <div id="bar_chart"></div>
+
   <script>
     const spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -36,7 +42,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/rche0049/3179/main/homeworkwk9/International_Chess_Map.csv"
+              "url": "https://raw.githubusercontent.com/rche0049/3179/main/International_Chess_Map.csv"
             },
             "key": "Country",
             "fields": ["FIDEAverage"]
@@ -69,5 +75,6 @@
 };
     vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
+
 </body>
 </html>
