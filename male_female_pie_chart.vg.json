@@ -1,13 +1,29 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 300,
   "description": "Gender Distribution by Country",
   "data": {
     "url": "https://raw.githubusercontent.com/rche0049/3179/main/International_Chess_Gender.csv",
     "format": {"type": "csv"}
   },
+  "transform": [
+    {"filter": "datum.Country === 'Russia' || datum.Country === Selected_Country_"}
+  ],
+  "params": [
+    {
+      "name": "Selected_Country_",
+      "bind": {"input": "select", "options": ["Russia", "India", "Germany", "Spain", "France", "Poland", "Italy", "Iran", "Turkey", "Czech Republic", "United States", "Hungary", "Greece", "Brazil", "Serbia", "Romania", "Ukraine", "Netherlands", "Argentina", "Denmark", "Slovakia", "Sweden", "Austria", "UNITED KINGDOM", "Sri Lanka", "Norway", "Croatia", "Belgium", "Colombia", "Switzerland", "Peru", "Israel", "Kazakhstan", "Venezuela", "Egypt", "Chile", "Cuba", "Australia", "Portugal", "Azerbaijan", "Mexico", "Bulgaria", "Malaysia", "China", "Slovenia", "Canada", "Georgia", "Ecuador", "Armenia", "Bangladesh", "South Africa", "Finland", "Lithuania", "Bolivia", "Uzbekistan", "Belarus", "Philippines", "Bosnia and Herzegovina", "Indonesia", "Nepal", "Myanmar", "Costa Rica", "Vietnam", "Latvia", "Iraq", "Ireland", "Zambia", "South Korea", "Moldova", "Dominican Republic", "Iceland", "Singapore", "Algeria", "Mongolia", "Uruguay", "Jordan", "Kenya", "Libya", "Kyrgyzstan", "New Zealand", "SCOTLAND", "Tunisia", "Paraguay", "Estonia", "Montenegro", "Angola", "Macedonia", "Botswana", "WALES", "United Arab Emirates", "Thailand", "Luxembourg", "Madagascar", "Syria", "Morocco", "Nigeria", "Zimbabwe", "Puerto Rico", "Hong Kong", "Japan", "Pakistan"
+    ]}
+    }
+  ],
   "mark": "arc",
   "encoding": {
     "theta": {"field": "Value", "type": "quantitative"},
-    "color": {"field": "Gender", "type": "nominal"}
+    "color": {"field": "Gender", "type": "nominal"},
+    "tooltip": [
+      {"field": "Gender", "type": "nominal", "title": "Gender"},
+      {"field": "Value", "type": "quantitative", "title": "Value"}
+    ]
   }
 }
