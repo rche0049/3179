@@ -13,7 +13,7 @@
     "axis": {
       "grid": false,
       "title":null,
-      "titleFontWeight": "normal"
+      "titleFontWeight": "normal" 
     }
   },
   "transform": [
@@ -26,7 +26,12 @@
       "sort": [{"field": "TotalTitles", "order": "descending"}]
     },
     {
-      "filter": {"field": "rank", "lte": 10}
+      "filter": {
+        "or": [
+          {"field": "rank", "lte": 9},
+          {"field": "Country", "equal": "Russia"}
+        ]
+      }
     },
     {
       "fold": ["GMs", "IMs", "FMs", "WGMs", "WIMs", "WFMs"],

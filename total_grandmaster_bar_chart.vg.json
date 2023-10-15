@@ -19,7 +19,10 @@
         "sort": [{"field": "GMs", "order": "descending"}]
       },
       {
-        "filter": {"field": "rank", "lte": 10}
+        "filter": {      "or": [
+          {"field": "rank", "lte": 9},
+          {"field": "Country", "equal": "Russia"}
+        ]}
       }
     ],
     "layer": [

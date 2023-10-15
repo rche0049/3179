@@ -2,80 +2,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-	background-color:#ffffff;
-	color:rgb(0, 0, 0);
-	margin:0;
-	padding:0;
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+	margin: 0;
+	padding: 0;
 }
 
 .header-bar {
-	background-color: #5a2804; /* Brown background color */
-	color: #fff; /* Text color for the header */
+	background-color: #5a2804;
+	/* Brown background color */
+	color: #fff;
+	/* Text color for the header */
 	padding: 10px;
-  }
+}
 
-  .header-bar h1 {
+.header-bar h1 {
 	text-align: left;
 	margin-left: 100px;
-	font-family: 'DM Sans',sans-serif;
+	font-family: 'DM Sans', sans-serif;
 
-  }
+}
 
 
 #container {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-  }
+}
 
-  .intro {
+.intro {
 	width: 80%;
 	margin: 10px;
 	padding: 2em;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: space-between;
 	font-family: 'Inter';
-  }
-  
-  .content {
+}
+
+.content {
 	flex: 1;
 	margin-right: 20px;
-  }
-  
-  .intro img {
-	max-width: 50%; /* Adjust the width as needed */
-  }  
+}
 
-  .map {
+.intro img {
+	max-width: 100%;
+	max-height: 300px; 
+	/* Adjust the width as needed */
+}
+
+figcaption {
+	font-style: italic;
+	text-align: left;
+font-size:14px;
+}
+
+.map {
 	width: 80%;
 	font-family: 'Inter';
-	background-color: rgba(255, 165, 0, 0.5); 
+	background-color: rgba(255, 165, 0, 0.5);
 	padding-bottom: 2em;
 	border-radius: 10px;
-	text-align: center; 
-  }
+	text-align: center;
+}
 
-  .totaltitles {
+.totaltitles {
+	padding: 2em;
 	width: 80%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	font-family: 'Inter';
-  }
+}
 
-  .figure {
-	font-style: italic; /* Make the paragraph italic */
-	padding-left:50px;
-	text-align: left; /* Align the paragraph to the left */
-  }
-  
+.charts {
+	display: flex;
+	flex-direction: column;
+}
+
+#stacked_bar_chart {
+	order: 1;
+	/* Place this chart above the bar chart */
+}
+
+#bar_chart {
+	order: 2;
+}
+
+
 .footer-bar {
-	background-color: #8B4513; /* Brown background color */
-	color: #fff; /* Text color for the footer */
+	background-color: #8B4513;
+	/* Brown background color */
+	color: #fff;
+	/* Text color for the footer */
 	text-align: center;
 	padding: 10px;
-  }
-  
+}
