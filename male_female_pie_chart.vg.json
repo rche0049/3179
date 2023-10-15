@@ -1,25 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 300,
-  "height": 300,
-  "title": "Gender Distribution by Country",
-  "transform": [
-    {"filter": "datum.Country === selectedCountry"}
-  ],
-  "params": [
-    {
-      "name": "selectedCountry",
-      "bind": {"input": "select", "options": ["Russia", "India", "Germany", "Spain"]}
-    }
-  ],
+  "description": "Gender Distribution by Country",
+  "data": {
+    "url": "https://raw.githubusercontent.com/rche0049/3179/main/International_Chess_Gender.csv",
+    "format": {"type": "csv"}
+  },
   "mark": "arc",
   "encoding": {
-    "theta": {"field": "% of Men", "type": "quantitative"},
-    "color": {"field": "Gender", "type": "nominal"},
-    "tooltip": [
-      {"field": "Gender", "type": "nominal", "title": "Gender"},
-      {"field": "% of Men", "type": "quantitative", "title": "% of Men"},
-      {"field": "% of Women", "type": "quantitative", "title": "% of Women"}
-    ]
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Gender", "type": "nominal"}
   }
 }
