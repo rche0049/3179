@@ -1,67 +1,53 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
-  "height": 400,
-  "title": "Stacked Bar Chart of Titles by Country",
+  "width": 400,
+  "height": 300,
+  "title": " ",
   "data": {
     "url": "https://raw.githubusercontent.com/rche0049/3179/main/International_Chess_Stats_Complete.csv",
     "format": {
       "type": "csv"
     }
   },
+  "config": {
+    "axis": {
+      "grid": false,
+      "title":null,
+      "titleFontWeight": "normal"
+    }
+  },
   "transform": [
     {
+      "calculate": "datum.GMs + datum.IMs + datum.FMs + datum.WGMs + datum.WIMs + datum.WFMs",
+      "as": "TotalTitles"
+    },
+    {
       "window": [{"op": "rank", "as": "rank"}],
-      "sort": [{"field": "GMs", "order": "descending"}]
+      "sort": [{"field": "TotalTitles", "order": "descending"}]
     },
     {
       "filter": {"field": "rank", "lte": 10}
+    },
+    {
+      "fold": ["GMs", "IMs", "FMs", "WGMs", "WIMs", "WFMs"],
+      "as": ["Title", "Count"]
     }
   ],
-  "mark": {
-    "type": "bar",
-    "tooltip": true
-  },
+  "mark": "bar",
   "encoding": {
     "x": {
       "field": "Country",
-      "type": "nominal",
-      "title": "Country"
+      "type": "nominal"
     },
     "y": {
-      "field": "GMs",
-      "type": "quantitative",
-      "stack": "normalize",
-      "title": "GMs"
+      "field": "Count",
+      "title": "Total",
+      "type": "quantitative"
     },
     "color": {
       "field": "Title",
-      "type": "nominal",
-      "title": "Title"
+      "type": "nominal"
     }
   },
-  "layer": [
-    {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "FMs",
-          "type": "quantitative",
-          "stack": "normalize",
-          "title": "FMs"
-        }
-      }
-    },
-    {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "IMs",
-          "type": "quantitative",
-          "stack": "normalize",
-          "title": "IMs"
-        }
-      }
-    }
-  ]
+  "view": {"stroke": null}
 }

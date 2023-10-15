@@ -13,7 +13,6 @@
         "type": "csv"
       }
     },
-    "background": "#312e2b", 
     "transform": [
       {
         "window": [{"op": "rank", "as": "rank"}],
@@ -36,7 +35,7 @@
             "field": "Country",
             "type": "nominal",
             "sort": {"field": "GMs", "op": "sum", "order": "descending"},
-            "axis": {"domain":false,"ticks":false, "title":null,"labelColor": "white","labelFontSize": 14}
+            "axis": {"domain":false,"ticks":false, "title":null,"labelFontSize": 14}
           },
           "color": {
             "value": "green"
@@ -61,8 +60,8 @@
             "type": "nominal",
             "sort": {"op": "sum", "field": "GMs", "order": "descending"}
           },
-          "text": {"field": "GMs", "type": "quantitative"},
-          "color": {"value": "white"}
+          "text": {"field": "GMs", "type": "quantitative"}
+  
         
          
         }

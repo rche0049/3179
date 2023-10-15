@@ -34,10 +34,24 @@
   <p class="figure"><strong>Figure 1</strong> World map of country FIDE ratings</p>
 </div>
   <!-- total gm bar chart --> 
+  <div class = "totaltitles">
+    <div class = "content">
+      <h3>The Chess Craze: From Novices to Grandmasters</h3>
+      <p>In recent years, chess has witnessed a significant surge in popularity, emerging as a strategic and intellectually engaging pastime for millions around the globe. </p>
+        <p>As a result of its soaring popularity, competitive chess has become an increasingly prominent pursuit. Governed by the Fédération Internationale des Échecs (FIDE), 
+          FIDE has become the norm, the legitimizing body, and the primary rating system. The FIDE rating system has played a pivotal role in evaluating players' skills and providing a 
+          standardized measure of their prowess, from aspiring novices to seasoned grandmasters.</p>
+          <p>What's fascinating is the diverse demographic landscape of chess enthusiasts, reflecting a blend of cultures, genders, and age brackets. This inclusivity is reshaping the chess community and making it more accessible than ever, 
+            ensuring that the ancient game continues to thrive as a competitive and intellectually stimulating pursuit.
+      </p>
+    </div>
+    <div id="stacked_bar_chart"></div>
+    </div>
+  <!-- total gm bar chart --> 
   <div class = "item_container">
   <div id="bar_chart"></div>
   </div>
-  <!-- total gm bar chart -->
+  <!-- rating vs age heat map -->
   <div id="heat_map"></div>
 </div>
   <footer class="footer-bar">
@@ -48,7 +62,7 @@
   <script>
     const spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 900,
+  "width": 800,
   "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
