@@ -8,7 +8,7 @@
     "format": {"type": "csv"}
   },
   "transform": [
-    {"filter": "datum.Country === 'Russia' || datum.Country === Selected_Country_"}
+    {"filter": "datum.Country === Selected_Country_"}
   ],
   "params": [
     {

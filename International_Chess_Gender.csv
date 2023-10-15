@@ -1,201 +1,201 @@
 Country,Gender,Value
-Russia,Male,16.62
-Russia,Female,83.38
-India,Male,10.94
-India,Female,89.06
-Germany,Male,6.59
-Germany,Female,93.41
-Spain,Male,5.72
-Spain,Female,94.28
-France,Male,9.01
-France,Female,90.99
-Poland,Male,14.51
-Poland,Female,85.49
-Italy,Male,5.89
-Italy,Female,94.11
-Iran,Male,10.14
-Iran,Female,89.86
-Turkey,Male,11.17
-Turkey,Female,88.83
-Czech Republic,Male,6.21
-Czech Republic,Female,93.79
-United States,Male,7.41
-United States,Female,92.59
-Hungary,Male,9.17
-Hungary,Female,90.83
-Greece,Male,13.35
-Greece,Female,86.65
-Brazil,Male,11.65
-Brazil,Female,88.35
-Serbia,Male,8.35
-Serbia,Female,91.65
-Romania,Male,13.83
-Romania,Female,86.17
-Ukraine,Male,13.88
-Ukraine,Female,86.12
-Netherlands,Male,5.82
-Netherlands,Female,94.18
-Argentina,Male,4.91
-Argentina,Female,95.09
-Denmark,Male,1.88
-Denmark,Female,98.12
-Slovakia,Male,6.15
-Slovakia,Female,93.85
-Sweden,Male,3.87
-Sweden,Female,96.13
-Austria,Male,5.57
-Austria,Female,94.43
-UNITED KINGDOM,Male,6.73
-UNITED KINGDOM,Female,93.27
-Sri Lanka,Male,25.68
-Sri Lanka,Female,74.32
-Norway,Male,4.32
-Norway,Female,95.68
-Croatia,Male,7.73
-Croatia,Female,92.27
-Belgium,Male,5.23
-Belgium,Female,94.77
-Colombia,Male,15.12
-Colombia,Female,84.88
-Switzerland,Male,4.14
-Switzerland,Female,95.86
-Peru,Male,17.2
-Peru,Female,82.8
-Kazakhstan,Male,6.39
-Kazakhstan,Female,93.61
-Venezuela,Male,16.62
-Venezuela,Female,83.38
-Egypt,Male,13.67
-Egypt,Female,86.33
-Chile,Male,5.01
-Chile,Female,94.99
-Cuba,Male,9.47
-Cuba,Female,90.53
-Australia,Male,17.77
-Australia,Female,82.23
-Portugal,Male,8.83
-Portugal,Female,91.17
-Azerbaijan,Male,8.19
-Azerbaijan,Female,91.81
-Mexico,Male,18.92
-Mexico,Female,81.08
-Bulgaria,Male,17.5
-Bulgaria,Female,82.5
-Malaysia,Male,14.11
-Malaysia,Female,85.89
-China,Male,18.16
-China,Female,81.84
-Slovenia,Male,28.89
-Slovenia,Female,71.11
-Canada,Male,12.48
-Canada,Female,87.52
-Georgia,Male,10.01
-Georgia,Female,89.99
-Ecuador,Male,27.46
-Ecuador,Female,72.54
-Armenia,Male,24.86
-Armenia,Female,75.14
-Bangladesh,Male,15.2
-Bangladesh,Female,84.8
-South Africa,Male,8.4
-South Africa,Female,91.6
-Finland,Male,16.52
-Finland,Female,83.48
-Lithuania,Male,4.39
-Lithuania,Female,95.61
-Bolivia,Male,17.37
-Bolivia,Female,82.63
-Uzbekistan,Male,21.41
-Uzbekistan,Female,78.59
-Belarus,Male,20.38
-Belarus,Female,79.62
-Philippines,Male,18.75
-Philippines,Female,81.25
-Bosnia and Herzegovina,Male,19.75
-Bosnia and Herzegovina,Female,80.25
-Indonesia,Male,8.42
-Indonesia,Female,91.58
-Nepal,Male,17.63
-Nepal,Female,82.37
-Myanmar,Male,6.07
-Myanmar,Female,93.93
-Costa Rica,Male,4.01
-Costa Rica,Female,95.99
-Vietnam,Male,15.41
-Vietnam,Female,84.59
-Latvia,Male,37.5
-Latvia,Female,62.5
-Iraq,Male,18.92
-Iraq,Female,81.08
-Ireland,Male,9.84
-Ireland,Female,90.16
-Zambia,Male,5.95
-Zambia,Female,94.05
-South Korea,Male,9.05
-South Korea,Female,90.95
-Moldova,Male,24.13
-Moldova,Female,75.87
-Dominican Republic,Male,19.11
-Dominican Republic,Female,80.89
-Iceland,Male,7.82
-Iceland,Female,92.18
-Singapore,Male,5.3
-Singapore,Female,94.7
-Algeria,Male,15.36
-Algeria,Female,84.64
-Mongolia,Male,16.43
-Mongolia,Female,83.57
-Uruguay,Male,35.18
-Uruguay,Female,64.82
-Jordan,Male,6.62
-Jordan,Female,93.38
-Kenya,Male,11.31
-Kenya,Female,88.69
-Libya,Male,16.37
-Libya,Female,83.63
-Kyrgyzstan,Male,1.2
-Kyrgyzstan,Female,98.8
-New Zealand,Male,17.95
-New Zealand,Female,82.05
-SCOTLAND,Male,11.28
-SCOTLAND,Female,88.72
-Tunisia,Male,6.82
-Tunisia,Female,93.18
-Paraguay,Male,10.25
-Paraguay,Female,89.75
-Estonia,Male,10.32
-Estonia,Female,89.68
-Montenegro,Male,22.02
-Montenegro,Female,77.98
-Angola,Male,8.39
-Angola,Female,91.61
-Macedonia,Male,12.94
-Macedonia,Female,87.06
-Botswana,Male,7.99
-Botswana,Female,92.01
-WALES,Male,25.83
-WALES,Female,74.17
-United Arab Emirates,Male,10.86
-United Arab Emirates,Female,89.14
-Thailand,Male,30.32
-Thailand,Female,69.68
-Luxembourg,Male,20.06
-Luxembourg,Female,79.94
-Madagascar,Male,6.03
-Madagascar,Female,93.97
-Syria,Male,9.18
-Syria,Female,90.82
-Morocco,Male,8.03
-Morocco,Female,91.97
-Nigeria,Male,9.4
-Nigeria,Female,90.6
-Zimbabwe,Male,12.2
-Zimbabwe,Female,87.8
-Puerto Rico,Male,23
-Puerto Rico,Female,77
-Hong Kong,Male,10.18
-Hong Kong,Female,89.82
-Japan,Male,8.54
-Japan,Female,91.46
-Pakistan,Male,9.43
-Pakistan,Female,90.57
+Russia,Female,16.62
+Russia,Male,83.38
+India,Female,10.94
+India,Male,89.06
+Germany,Female,6.59
+Germany,Male,93.41
+Spain,Female,5.72
+Spain,Male,94.28
+France,Female,9.01
+France,Male,90.99
+Poland,Female,14.51
+Poland,Male,85.49
+Italy,Female,5.89
+Italy,Male,94.11
+Iran,Female,10.14
+Iran,Male,89.86
+Turkey,Female,11.17
+Turkey,Male,88.83
+Czech Republic,Female,6.21
+Czech Republic,Male,93.79
+United States,Female,7.41
+United States,Male,92.59
+Hungary,Female,9.17
+Hungary,Male,90.83
+Greece,Female,13.35
+Greece,Male,86.65
+Brazil,Female,11.65
+Brazil,Male,88.35
+Serbia,Female,8.35
+Serbia,Male,91.65
+Romania,Female,13.83
+Romania,Male,86.17
+Ukraine,Female,13.88
+Ukraine,Male,86.12
+Netherlands,Female,5.82
+Netherlands,Male,94.18
+Argentina,Female,4.91
+Argentina,Male,95.09
+Denmark,Female,1.88
+Denmark,Male,98.12
+Slovakia,Female,6.15
+Slovakia,Male,93.85
+Sweden,Female,3.87
+Sweden,Male,96.13
+Austria,Female,5.57
+Austria,Male,94.43
+UNITED KINGDOM,Female,6.73
+UNITED KINGDOM,Male,93.27
+Sri Lanka,Female,25.68
+Sri Lanka,Male,74.32
+Norway,Female,4.32
+Norway,Male,95.68
+Croatia,Female,7.73
+Croatia,Male,92.27
+Belgium,Female,5.23
+Belgium,Male,94.77
+Colombia,Female,15.12
+Colombia,Male,84.88
+Switzerland,Female,4.14
+Switzerland,Male,95.86
+Peru,Female,17.2
+Peru,Male,82.8
+Kazakhstan,Female,6.39
+Kazakhstan,Male,93.61
+Venezuela,Female,16.62
+Venezuela,Male,83.38
+Egypt,Female,13.67
+Egypt,Male,86.33
+Chile,Female,5.01
+Chile,Male,94.99
+Cuba,Female,9.47
+Cuba,Male,90.53
+Australia,Female,17.77
+Australia,Male,82.23
+Portugal,Female,8.83
+Portugal,Male,91.17
+Azerbaijan,Female,8.19
+Azerbaijan,Male,91.81
+Mexico,Female,18.92
+Mexico,Male,81.08
+Bulgaria,Female,17.5
+Bulgaria,Male,82.5
+Malaysia,Female,14.11
+Malaysia,Male,85.89
+China,Female,18.16
+China,Male,81.84
+Slovenia,Female,28.89
+Slovenia,Male,71.11
+Canada,Female,12.48
+Canada,Male,87.52
+Georgia,Female,10.01
+Georgia,Male,89.99
+Ecuador,Female,27.46
+Ecuador,Male,72.54
+Armenia,Female,24.86
+Armenia,Male,75.14
+Bangladesh,Female,15.2
+Bangladesh,Male,84.8
+South Africa,Female,8.4
+South Africa,Male,91.6
+Finland,Female,16.52
+Finland,Male,83.48
+Lithuania,Female,4.39
+Lithuania,Male,95.61
+Bolivia,Female,17.37
+Bolivia,Male,82.63
+Uzbekistan,Female,21.41
+Uzbekistan,Male,78.59
+Belarus,Female,20.38
+Belarus,Male,79.62
+Philippines,Female,18.75
+Philippines,Male,81.25
+Bosnia and Herzegovina,Female,19.75
+Bosnia and Herzegovina,Male,80.25
+Indonesia,Female,8.42
+Indonesia,Male,91.58
+Nepal,Female,17.63
+Nepal,Male,82.37
+Myanmar,Female,6.07
+Myanmar,Male,93.93
+Costa Rica,Female,4.01
+Costa Rica,Male,95.99
+Vietnam,Female,15.41
+Vietnam,Male,84.59
+Latvia,Female,37.5
+Latvia,Male,62.5
+Iraq,Female,18.92
+Iraq,Male,81.08
+Ireland,Female,9.84
+Ireland,Male,90.16
+Zambia,Female,5.95
+Zambia,Male,94.05
+South Korea,Female,9.05
+South Korea,Male,90.95
+Moldova,Female,24.13
+Moldova,Male,75.87
+Dominican Republic,Female,19.11
+Dominican Republic,Male,80.89
+Iceland,Female,7.82
+Iceland,Male,92.18
+Singapore,Female,5.3
+Singapore,Male,94.7
+Algeria,Female,15.36
+Algeria,Male,84.64
+Mongolia,Female,16.43
+Mongolia,Male,83.57
+Uruguay,Female,35.18
+Uruguay,Male,64.82
+Jordan,Female,6.62
+Jordan,Male,93.38
+Kenya,Female,11.31
+Kenya,Male,88.69
+Libya,Female,16.37
+Libya,Male,83.63
+Kyrgyzstan,Female,1.2
+Kyrgyzstan,Male,98.8
+New Zealand,Female,17.95
+New Zealand,Male,82.05
+SCOTLAND,Female,11.28
+SCOTLAND,Male,88.72
+Tunisia,Female,6.82
+Tunisia,Male,93.18
+Paraguay,Female,10.25
+Paraguay,Male,89.75
+Estonia,Female,10.32
+Estonia,Male,89.68
+Montenegro,Female,22.02
+Montenegro,Male,77.98
+Angola,Female,8.39
+Angola,Male,91.61
+Macedonia,Female,12.94
+Macedonia,Male,87.06
+Botswana,Female,7.99
+Botswana,Male,92.01
+WALES,Female,25.83
+WALES,Male,74.17
+United Arab Emirates,Female,10.86
+United Arab Emirates,Male,89.14
+Thailand,Female,30.32
+Thailand,Male,69.68
+Luxembourg,Female,20.06
+Luxembourg,Male,79.94
+Madagascar,Female,6.03
+Madagascar,Male,93.97
+Syria,Female,9.18
+Syria,Male,90.82
+Morocco,Female,8.03
+Morocco,Male,91.97
+Nigeria,Female,9.4
+Nigeria,Male,90.6
+Zimbabwe,Female,12.2
+Zimbabwe,Male,87.8
+Puerto Rico,Female,23
+Puerto Rico,Male,77
+Hong Kong,Female,10.18
+Hong Kong,Male,89.82
+Japan,Female,8.54
+Japan,Male,91.46
+Pakistan,Female,9.43
+Pakistan,Male,90.57
