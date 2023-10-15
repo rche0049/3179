@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 400,
   "height": 300,
-  "title": "Heatmap of Average FIDE Ratings by Age",
+  "title": "Average FIDE Ratings of each Age Bracket",
   "data": {
     "url": "https://raw.githubusercontent.com/rche0049/3179/main/Complete_Players_Database.csv",
     "format": {
@@ -24,7 +24,7 @@
     "color": {
       "aggregate": "count",
       "type": "quantitative",
-      "title": "Count",
+      "title": "No. of players",
       "scale": {
         "scheme": "goldgreen" 
       }

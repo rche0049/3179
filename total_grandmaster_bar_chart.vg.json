@@ -4,8 +4,8 @@
     "height": 300,
     "title": {
       "text": "Top 10 Countries by Total GMs",
-      "color":"white",
-      "fontSize":20
+     
+      "fontSize":14
     },
     "data": {
       "url": "https://raw.githubusercontent.com/rche0049/3179/main/International_Chess_Stats_Complete.csv",
