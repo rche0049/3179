@@ -14,6 +14,18 @@ vegaEmbed("#stacked_bar_chart", vg_3,{"actions":false}).then(function (result) {
    // (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
+// JavaScript code for Vega-Lite
+const countryDropdown = document.getElementById("country-dropdown");
+countryDropdown.addEventListener("change", function () {
+  const selectedCountry = countryDropdown.value;
+  loadGenderData(selectedCountry);
+});
 
+function loadGenderData(selectedCountry) {
+  // Fetch and process data for the selected country
+  // Create a Vega-Lite specification for the pie chart
+  // Embed the pie chart in the "gender-pie-chart" container
+  // Update the chart with the selected country's data
+}
 
 

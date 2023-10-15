@@ -1,19 +1,25 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple pie chart with embedded data.",
-  "data": {
-    "values": [
-      {"category": 1, "value": 4},
-      {"category": 2, "value": 6},
-      {"category": 3, "value": 10},
-      {"category": 4, "value": 3},
-      {"category": 5, "value": 7},
-      {"category": 6, "value": 8}
-    ]
-  },
+  "width": 300,
+  "height": 300,
+  "title": "Gender Distribution by Country",
+  "transform": [
+    {"filter": "datum.Country === selectedCountry"}
+  ],
+  "params": [
+    {
+      "name": "selectedCountry",
+      "bind": {"input": "select", "options": ["Russia", "India", "Germany", "Spain"]}
+    }
+  ],
   "mark": "arc",
   "encoding": {
-    "theta": {"field": "value", "type": "quantitative"},
-    "color": {"field": "category", "type": "nominal"}
+    "theta": {"field": "% of Men", "type": "quantitative"},
+    "color": {"field": "Gender", "type": "nominal"},
+    "tooltip": [
+      {"field": "Gender", "type": "nominal", "title": "Gender"},
+      {"field": "% of Men", "type": "quantitative", "title": "% of Men"},
+      {"field": "% of Women", "type": "quantitative", "title": "% of Women"}
+    ]
   }
 }
