@@ -42,7 +42,11 @@
           },
           "color": {
             "value": "green"
-          }
+          },
+          "tooltip": [
+            { "field": "GMs", "type": "quantitative", "title": "Total Grandmasters" },
+            { "field": "Country", "type": "nominal" }
+          ]
         }
       },
       {  

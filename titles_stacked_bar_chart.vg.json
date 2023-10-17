@@ -12,8 +12,9 @@
   "config": {
     "axis": {
       "grid": false,
-      "title":null,
-      "titleFontWeight": "normal"   }
+      "title": null,
+      "titleFontWeight": "normal"
+    }
   },
   "transform": [
     {
@@ -21,20 +22,20 @@
       "as": "TotalTitles"
     },
     {
-      "window": [{"op": "rank", "as": "rank"}],
-      "sort": [{"field": "TotalTitles", "order": "descending"}]
+      "window": [{ "op": "rank", "as": "rank" }],
+      "sort": [{ "field": "TotalTitles", "order": "descending" }]
     },
     {
       "filter": {
         "or": [
-          {"field": "rank", "lte": 9},
-          {"field": "Country", "equal": "Russia"}
+          { "field": "rank", "lte": 9 },
+          { "field": "Country", "equal": "Russia" }
         ]
       }
     },
     {
       "fold": ["GMs", "IMs", "FMs", "WGMs", "WIMs", "WFMs"],
-      "as": ["Title", "Count"]
+      "as": ["Title", "Total players"]
     }
   ],
   "mark": "bar",
@@ -43,15 +44,20 @@
       "field": "Country",
       "type": "nominal"
     },
-    "y": {
-      "field": "Count",
+    "y": { 
+      "field": "Total players",
       "title": "No. of players",
       "type": "quantitative"
     },
     "color": {
       "field": "Title",
       "type": "nominal"
-    }
+    },
+    "tooltip": [
+      { "field": "Title", "type": "nominal" },
+      { "field": "Total players", "type": "quantitative" },
+      { "field": "Country", "type": "nominal" }
+    ]
   },
-  "view": {"stroke": null}
+  "view": { "stroke": null }
 }

@@ -23,7 +23,7 @@
     "color": {"field": "Gender", "type": "nominal"},
     "tooltip": [
       {"field": "Gender", "type": "nominal", "title": "Gender"},
-      {"field": "Value", "type": "quantitative", "title": "Value"}
+      {"field": "Value", "type": "quantitative", "title": "Percentage"}
     ]
   }
 }
